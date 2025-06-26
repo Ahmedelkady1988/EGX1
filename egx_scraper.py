@@ -21,7 +21,7 @@ df = pd.read_excel("Stocks Links.xlsx", sheet_name="Stocks")
 # Loop over each URL
 results = []
 for i, row in df.iterrows():
-    url = row["Link"]
+    url = row["URL"]
     price = fetch_data(url)
     results.append({
         "Company": row["Company Name"],
